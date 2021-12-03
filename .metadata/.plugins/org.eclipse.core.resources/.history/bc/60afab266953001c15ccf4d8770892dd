@@ -1,0 +1,45 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.demo.Model.UserModel;
+import com.example.demo.dto.UserDTO;
+import com.example.demo.repository.UserRepository;
+
+public class UserService implements IUserService {
+	
+	@Autowired
+	UserRepository userRepository;
+
+	@Override
+	public List<UserModel> getAllUsersDetails() {
+		return userRepository.findAll();
+	}
+
+	@Override
+	public UserModel addUserDetails(UserDTO userDTO) {
+		
+		return null;
+	}
+
+	@Override
+	public UserModel updateUserDetails(UserDTO userDTO) {
+		
+		return null;
+	}
+
+	@Override
+	public void deleteUserDetails() {
+		
+		
+	}
+
+	@Override
+	public UserModel getUserDetailsById(int id) {
+		
+		return null;
+	}
+
+}
