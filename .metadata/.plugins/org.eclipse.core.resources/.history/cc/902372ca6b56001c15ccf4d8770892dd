@@ -40,4 +40,5 @@ public class UserModel {
 		this.mobile = userDTO.mobile;
 		this.address = userDTO.address;
 	}
+
 }
